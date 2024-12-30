@@ -11,6 +11,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.customBox {
+				display: flex; /* Use flexbox for layout */
+				gap: .3em; /* Space between the boxes */
+				/* flex-wrap: wrap; Wrap boxes to the next line if needed */
+				/* justify-content: center; Center the boxes horizontally */
+			}
+
+			.box {
+				background-color: transparent;
+				border: solid 1px !important;
+				border-color: rgba(255, 255, 255, 0.4) !important;
+				border-radius: 1em;
+				color: #ffffff !important;
+				display: inline-block;
+				font-size: 0.5em;
+				font-weight: bold;
+				height: calc(3em + 1px);
+				letter-spacing: 0.25em;
+				line-height: 3em;
+				outline: 0;
+				padding: 0 2em;
+				position: relative;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				white-space: nowrap;
+			}
+
+			p {
+				color:rgba(255, 255, 255, 1)
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,7 +52,7 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">About Me</a></li>
+							<li><a href="#intro">About</a></li>
 							<li><a href="#one">Projects</a></li>
 						</ul>
 					</nav>
@@ -32,20 +65,26 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Welcome to My Personal Website!</h1>
-							<p>My name is John Oyer and I am a computer science engineering student at the University of Michigan.</p>
-							<p><a href="https://www.linkedin.com/in/john-oyer-99405824b/">LinkedIn</a> | <a href="https://github.com/johnoyer">GitHub</a></p>
+							<h1>About Me</h1>
+							<p style="color: #ffffff85;">I am John Oyer, an undergraduate computer science student at the University of Michigan College of Engineering.</p>
+							<p><a href="https://www.linkedin.com/in/john-oyer-99405824b/" class="icon brands fa-linkedin-in"></a> <a href="https://www.linkedin.com/in/john-oyer-99405824b/">LinkedIn</a>  
+								| <a href="https://github.com/johnoyer" class="icon brands fa-github"></a> <a href="https://github.com/johnoyer">GitHub</a></p>
 						</div>
 					</section>
-
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>CSE Simulator</h2>
-									<p>Walk around the Bob and Betty Byster building in virtual reality!</p>
+									<h2>VeGo</h2>
+									<div class="customBox">
+										<div class="box">Flutter</div>
+										<div class="box">Dart</div>
+										<div class="box">Google Cloud Vision API</div>
+										<div class="box">Asynchronous Programming</div>
+									</div>
+									<p>Identify food items that are compatible with your diet</p>
 									<ul class="actions">
 										<li><a href="cse-simulator.html" class="button">Learn more</a></li>
 									</ul>
@@ -53,25 +92,63 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="http://bit.ly/great_lakes_explore" class="image"><img src="images/eeePhoto.png" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>A2GO</h2>
-									<p>Plant trees around Ann Arbor in augmented reality. Beware of squirrels!</p>
+									<h2>Ecology Education Enhanced</h2>
+									<div class="customBox">
+										<div class="box">Unreal Engine 5</div>
+										<div class="box">VR</div>
+										<div class="box">Blueprints</div>
+										<div class="box">Jira Programming</div>
+										<div class="box">Mixamo</div>
+										<div class="box">SketchFab</div>
+										<div class="box">Freesound</div>
+									</div>
+									<p>Learn about the Great Lakes in an immersive VR experience</p>
 									<ul class="actions">
-										<li><a href="a2go.html" class="button">Learn more</a></li>
+										<li><a href="http://bit.ly/great_lakes_explore" class="button">Website</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/csePhoto.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ecology Education Enhanced</h2>
-									<p>Learn about the Great Lakes in an immersive VR experience</p>
+									<h2>CSE Simulator</h2>
+									<div class="customBox">
+										<div class="box">Unreal Engine 5</div>
+										<div class="box">VR</div>
+										<div class="box">Blueprints</div>
+										<div class="box">Jira Programming</div>
+										<div class="box">Mixamo</div>
+										<div class="box">SketchFab</div>
+										<div class="box">Freesound</div>
+									</div>
+									<p>Walk around University of Michigan's Bob and Betty Byster building in virtual reality</p>
 									<ul class="actions">
-										<li><a href="http://bit.ly/great_lakes_explore" class="button">Learn more</a></li>
+										<li><a href="cse-simulator.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="a2go.html" class="image"><img src="images/a2goPhoto.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>A2GO</h2>
+									<div class="customBox">
+										<div class="box">Unity</div>
+										<div class="box">AR</div>
+										<div class="box">C#</div>
+										<div class="box">Jira</div>
+										<div class="box">SketchFab</div>
+										<div class="box">Freesound</div>
+									</div>
+									<p>Plant trees around Ann Arbor in augmented reality</p>
+									<ul class="actions">
+										<li><a href="a2go.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
