@@ -1,6 +1,4 @@
-Personal website for John Oyer.
-
-Credit to "Hyperspace by HTML5 UP" for the website template
+Personal website for John Oyer. Credit to "Hyperspace by HTML5 UP" for the website template.
 
 HTML5 UP info below:
 
