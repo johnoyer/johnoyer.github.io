@@ -3945,21 +3945,6 @@ input, select, textarea {
   object-fit: cover;
 }
 
-.spotlights > section > .image {
-  width: 320px !important;
-  min-width: 320px;
-  height: 220px;
-  flex: 0 0 320px;
-  overflow: hidden;
-}
-
-.spotlights > section > .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 @media screen and (max-width: 736px) {
   .about-row {
     flex-direction: column;
