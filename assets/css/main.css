@@ -3933,14 +3933,35 @@ input, select, textarea {
 }
 
 .about-photo {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   justify-content: center;
 }
 
 .about-photo img {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   object-fit: cover;
+}
+
+@media screen and (max-width: 736px) {
+  .about-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-photo {
+    order: 1;
+    width: 100%;
+  }
+
+  .about-text {
+    order: 2;
+    width: 100%;
+  }
+
+  .about-photo img {
+    max-width: 220px;
+  }
 }
